@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "virtualship" %}
 {% set version = "0.0.3" %}
 
@@ -14,16 +15,16 @@ build:
     - virtualship = virtualship.cli.main:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=61.0
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - click
     - parcels >3, <3.1.0
     - pyproj >=3,<4
@@ -40,6 +41,7 @@ test:
     - virtualship --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/OceanParcels/virtualship
