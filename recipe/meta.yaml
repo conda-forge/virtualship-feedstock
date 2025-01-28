@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "virtualship" %}
-{% set version = "0.0.3" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualship-{{ version }}.tar.gz
-  sha256: 2d5b812136d4e267258abc5b0425cca7807de6e8cbd6b367d8326a6be537c586
+  sha256: bdede59817e8055a2f72c05050cfbbdcec65861b63621863beed8c6456954a5b
 
 build:
   entry_points:
     - virtualship = virtualship.cli.main:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
