@@ -147,6 +147,3 @@ Feedstock Maintainers
 * [@ammedd](https://github.com/ammedd/)
 * [@erikvansebille](https://github.com/erikvansebille/)
 
-
-<!-- dummy commit to enable rerendering -->
-
