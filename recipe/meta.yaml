@@ -32,7 +32,11 @@ requirements:
     - opensimplex ==0.4.5
     - numpy >=1,<2
     - pydantic >=2,<3
-    - copernicusmarine >=2
+    - pyyaml
+    - copernicusmarine >=2.2.2
+    - yaspin
+    - textual
+
 
 test:
   imports:
