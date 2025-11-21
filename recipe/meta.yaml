@@ -34,6 +34,7 @@ requirements:
     - pydantic >=2,<3
     - pyyaml
     - copernicusmarine >=2.2.2
+    - openpyxl
     - yaspin
     - textual
 
