@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@erikvansebille](https://github.com/erikvansebille/)
 * [@j-atkins](https://github.com/j-atkins/)
 
-
-<!-- dummy commit to enable rerendering -->
-
