@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "virtualship" %}
 {% set version = "1.0.0" %}
 
@@ -21,23 +21,23 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools >=61.0
-    - setuptools-scm >=6.2
+    - setuptools-scm >=8.0
     - pip
   run:
     - python >={{ python_min }}
     - click
-    - parcels >3.1.0
+    - parcels >=4
     - pyproj >=3,<4
     - sortedcontainers ==2.4.0
     - opensimplex ==0.4.5
-    - numpy >=1,<2
+    - numpy >=2.1.0
     - pydantic >=2,<3
     - pyyaml
     - copernicusmarine >=2.2.2
+    - pandas
     - openpyxl
     - yaspin
     - textual
-
 
 test:
   imports:
@@ -50,8 +50,9 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/OceanParcels/virtualship
-  summary: Code for the Virtual Ship Classroom, where Marine Scientists can combine Copernicus Marine Data with an OceanParcels ship to go on a virtual expedition.
+  home: https://virtualship.parcels-code.org/
+  dev_url: https://github.com/Parcels-code/virtualship
+  summary: Code for VirtualShip, where Marine Scientists can combine Copernicus Marine Data with a Parcels ship to go on a virtual expedition.
   license: MIT
   license_file: LICENSE
 
