@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "virtualship" %}
-{% set version = "0.3.6" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualship-{{ version }}.tar.gz
-  sha256: 6a62e38454f770366008ecbf79927e1adb64b4297695da11cdd81d0ea82eb796
+  sha256: 3fb58dcb9b64ea926db32ed9a92b51c5b0244baa647b660585b5b0afe03d733f
 
 build:
   entry_points:
