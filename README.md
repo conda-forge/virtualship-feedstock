@@ -3,11 +3,13 @@ About virtualship-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/virtualship-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/OceanParcels/virtualship
+Home: https://virtualship.parcels-code.org/
 
 Package license: MIT
 
-Summary: Code for the Virtual Ship Classroom, where Marine Scientists can combine Copernicus Marine Data with an OceanParcels ship to go on a virtual expedition.
+Summary: Code for VirtualShip, where Marine Scientists can combine Copernicus Marine Data with a Parcels ship to go on a virtual expedition.
+
+Development: https://github.com/Parcels-code/virtualship
 
 Current build status
 ====================
